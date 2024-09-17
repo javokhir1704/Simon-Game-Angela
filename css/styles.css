@@ -1,0 +1,119 @@
+:root {
+  --background-color: #011F3F;
+  --red-color: red;
+  --green-color:green;
+  --blue-color:blue;
+  --yellow-color:yellow;
+}
+
+body {
+  text-align: center;
+  background-color: var(--background-color);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 3.5%;
+  color: #FEF2BF;
+  line-height: 4rem;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.container .btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.container .red {
+  background-color: var(--red-color);
+}
+.container .green {
+  background-color: var(--green-color);
+}
+.container .blue {
+  background-color: var(--blue-color);
+}
+.container .yellow {
+  background-color: var(--yellow-color);
+}
+
+.game-over {
+  background-color: var(--red-color);
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#remain-score {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgb(7, 255, 40);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+#start {
+  background: rgb(61, 61, 0);
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0px 0px 3px;
+  cursor: pointer;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  #level-title {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    margin: 5%;
+    color: #FEF2BF;
+    line-height: 1.3;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container .btn {
+    margin: 10px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  .container .red {
+    background-color: var(--red-color);
+  }
+  .container .green {
+    background-color: var(--green-color);
+  }
+  .container .blue {
+    background-color: var(--blue-color);
+  }
+  .container .yellow {
+    background-color: var(--yellow-color);
+  }
+}/*# sourceMappingURL=styles.css.map */

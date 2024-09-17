@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Favicon Link-->
+    <link rel="icon" href="Images/favicon-icon.png">
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 id="level-title">Press A Key to Start</h1>
+
+    <div class="container">
+
+        <div class="row">
+            <button type="button" id="green" class="btn green"></button>
+            <button type="button" id="red" class="btn red"></button>
+        </div>
+
+        <div class="row">
+            <button type="button" id="yellow" class="btn yellow"></button>
+            <button type="button" id="blue" class="btn blue"></button>
+        </div>
+
+        <h2 id="remain-score"></h2>
+        <button id="start" type="button">Start</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="nextSequence.js"></script>
+</body>
+</html>
